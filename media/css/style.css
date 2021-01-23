@@ -1,0 +1,553 @@
+body {
+	background-image:-moz-linear-gradient(50% 0% -90deg,rgb(255,255,255) 0%,rgb(221,221,221) 100%); 
+	background-image:linear-gradient(180deg,rgb(255,255,255) 0%,rgb(221,221,221) 100%);
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+div {
+	position: relative;
+}
+
+#clear {
+	clear: both;
+}
+
+/* Fontes */
+
+@font-face {
+	src: url(../fontes/segoeui.ttf);
+	font-family: "Segoe UI";
+}
+
+@font-face {
+	src: url(../fontes/segoeuil_0.ttf);
+	font-family: "Segoe UI Light";
+}
+
+@font-face {
+	src: url(../fontes/segoeuisl_0.ttf);
+	font-family: "Segoe UI Semi Light";
+}
+
+/* Topo do Site */
+
+.topo-site {
+	width: 845px;
+	margin: auto;
+	margin-top: 44px;
+	display: table;
+}
+
+.topo-site > a > .logo {
+	background: url(../img/logo.png);
+	height: 135px;
+	width: 401px;
+	float: left;
+	margin-top: 7px;
+}
+
+.topo-site > .contato {
+	width: auto;
+	float: right;
+}
+
+.topo-site > .contato > div {
+	display: table;
+	margin: 14px 0px;
+}
+
+.topo-site > .contato > div > .icon {
+	width: 28px;
+	height: 33px;
+	float: left;
+}
+
+.topo-site > .contato > div > .icon.local {
+	background: url(../img/icones/local.png) no-repeat;
+	background-position: center;
+}
+
+.topo-site > .contato > div > .icon.email {
+	background: url(../img/icones/email.png) no-repeat;
+	background-position: center;
+}
+
+.topo-site > .contato > div > .icon.telefone {
+	background: url(../img/icones/telefone.png) no-repeat;
+	background-position: center;
+}
+
+.topo-site > .contato > div > .info {
+	color: #525252;
+	font-family: "Segoe UI Semi Light";
+	font-size: 13px;
+	float: left;
+	padding: 9px 9px;
+}
+
+/* Menu */
+
+.menu {
+	width: 1200px;
+	margin: auto;
+	margin-top: 100px;
+	display: table;
+}
+
+.menu > ul {
+	width: auto;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+.menu > ul > li {
+	float: left;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	position: relative;
+}
+
+.menu > ul > li:hover {
+	background: white;
+	box-shadow: #DADADA 0px 0px 1px 1px;
+	border-radius: 5px;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.menu > ul > li > .item {
+	font: 20px "Segoe UI Light";
+	padding: 7px 7px;
+	float: left;
+}
+
+.menu > ul > li > .item.verde {
+	color: #27AE60;
+}
+
+.menu > ul > li > .item.azul {
+	color: #2980B9;
+}
+
+.menu > ul > li > .item.laranja {
+	color: #D35400;
+}
+
+.menu > ul > li > .item.verde-escuro {
+	color: #16A085;
+}
+
+.menu > ul > li > .item.azul-escuro {
+	color: #2C3E50;
+}
+
+.menu > ul > li > .seta {
+	height: 9px;
+	width: 10px;
+	float: left;
+	margin: 17px 7px;
+}
+
+.menu > ul > li > .seta.verde {
+	background: url(../img/setas-menu.png);
+}
+
+.menu > ul > li > .seta.azul {
+	background: url(../img/setas-menu.png) 0px -15px;
+}
+
+.menu > ul > li > .seta.laranja {
+	background: url(../img/setas-menu.png) 0px -30px;
+}
+
+.menu > ul > li > .seta.verde-escuro {
+	background: url(../img/setas-menu.png) 0px -43px;
+}
+
+.menu > ul > li > .seta.azul-escuro {
+	background: url(../img/setas-menu.png) 0px -58px;
+}
+
+/* Submenu */
+
+.menu > ul > li > ul.submenu {
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	top: -20px;
+	transition-property: top;
+	transition-duration: 0.4s;
+}
+
+.menu > ul > li:hover > ul.submenu {
+	visibility: visible;
+	background: white;
+	box-shadow: #DADADA 1px 0px 1px 0px, #DADADA -1px 0px 1px 0px, #DADADA 0px 1px 1px 0px;
+	border-radius: 0px 0px 5px 5px;
+	top: 39px;
+	transition-property: top;
+	transition-duration: 0.4s;
+}
+
+.menu > ul > li:hover > ul.submenu > li.item {
+	padding: 10px 10px;
+	font: 15px "Segoe UI Light";
+}
+
+
+/* Pesquisar no site */
+.menu > form > .pesquisar {
+	background: url(../img/pesquisar-button.png);
+	height: 37px;
+	width: 269px;
+	float: right;
+	border: 0px;
+	font: 16px "Segoe UI Light";
+	color: #333333;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 40px;
+}
+
+.menu > form > .pesquisar::-webkit-input-placeholder {
+	color: #333333;
+}
+
+.menu > form > .pesquisar::-moz-placeholder {
+	color: #333333;
+}
+
+/* Slide */
+
+.side-slide {
+	background: #111111;
+	height: 406px;
+	width: 100%;
+	margin-top: 46px;
+}
+
+.side-slide > .slide {
+	height: 406px;
+	width: 897px;
+	margin: auto;
+}
+
+.side-slide > .slide > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.side-slide > .slide > ul > li > .imagem {
+	height: 406px;
+	width: 897px;
+}
+
+.side-slide > .radial {
+	background: url(../img/slide/radial.png);
+	height: 406px;
+	width: 907px;
+	position: absolute;
+	left: 50%;
+	margin-left: -458px;
+	z-index: 9;
+}
+
+.side-slide > .radial > .seta {
+	width: 29px;
+	height: 47px;
+	position: absolute;
+	cursor: pointer;
+	top: 191px;
+}
+
+.side-slide > .radial > .seta.anterior {
+	background: url(../img/setas.png);
+	left: -60px;
+}
+
+.side-slide > .radial > .seta.proximo {
+	background: url(../img/setas.png) 30px 0px;
+	right: -60px;
+}
+
+/* Meio do Site */
+
+.side-content {
+	width: 1102px;
+	margin: auto;
+	margin-top: 50px;
+	display: table;
+}
+
+.side-content > .esquerda {
+	width: 498px;
+	float: left;
+}
+
+.side-content > .direita {
+	width: 563px;
+	float: right;
+}
+
+/* Titulos Boxes */
+
+.box {
+	width: auto;
+	height: 84px;
+}
+
+.box > .barra {
+	width: 7px;
+	height: 84px;
+	position: absolute;
+	left: 0;
+}
+
+.box > .barra.escura {
+	background: #333333;
+}
+
+.box > .titulo {
+	font-family: "Segoe UI Semi Light";
+	font-size: 35px;
+	color: #333;
+	padding: 5px 15px;
+}
+
+.box > .descricao {
+	font-family: "Segoe UI Light";
+	font-size: 20px;
+	color: #333;
+	padding: 5px 15px;
+}
+
+.box > .paginacao {
+	width: 115px;
+	position: absolute;
+	right: 0;
+	top: 13px;
+}
+
+.box > .paginacao > .seta {
+	height: 43px;
+	width: 26px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.box > .paginacao > .seta.anterior {
+	background: url(../img/setas.png) 0px 43px;
+	left: 0;
+	top: 0;
+}
+
+.box > .paginacao > .seta.proximo {
+	background: url(../img/setas.png) 25px 43px;
+	right: 0;
+	top: 0;
+}
+
+.box > .paginacao > .texto {
+	text-align: center;
+	color: #333;
+	font-family: "Segoe UI Light";
+	font-size: 17px;
+	padding-top: 12px;
+}
+
+/* Noticia */
+
+.side-noticia.pequena {
+	width: 438px;
+	margin-top: 42px;
+}
+
+.side-noticia.pequena:first-of-type {
+	margin-top: 52px;
+}
+
+
+.side-noticia > .texto {
+	font-family: "Segoe UI Light";
+	color: #212121;
+}
+
+.side-noticia > .texto.titulo {
+	font-size: 23px;
+}
+
+.side-noticia > .texto.descricao {
+	font-size: 15px;
+	padding: 20px 0px;
+}
+
+.side-noticia > .data {
+	font-family: "Segoe UI Semi Light";
+	font-size: 15px;
+	color: #333;
+	position: absolute;
+	right: 0;
+	bottom: 23px;
+}
+
+.esquerda > .mais-noticias {
+	width: 262px;
+	height: 62px;
+	margin: auto;
+	box-shadow: #878787 0px 0px 1px;
+	margin-top: 30px;
+	text-align: center;
+	font-family: "Segoe UI Light";
+	font-size: 17px;
+	color: #878787;
+	box-sizing: border-box;
+	padding-top: 22px;
+	cursor: pointer;
+}
+
+/* Mais Visitados */
+
+.direita > .mais-visitados {
+	width: 300px;
+	margin: auto;
+}
+
+.direita > .mais-visitados > .imagem {
+	width: 300px;
+	height: 300px;
+}
+
+.direita > .mais-visitados > .texto {
+	color: #333;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.direita > .mais-visitados > .texto.titulo {
+	font-family: "Segoe UI Semi Light";
+	font-size: 32px;
+}
+
+.direita > .mais-visitados > .texto.descricao {
+	font-family: "Segoe UI Light";
+	font-size: 18px;
+}
+
+.direita > .mais-visitados > .mais-informacao {
+	background: #4ABDD8;
+	height: 33px;
+	width: 156px;
+	float: right;
+	margin: 14px 5px;
+	color: white;
+	font-family: "Segoe UI Semi Light";
+	font-size: 12px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+
+/* Rodape */
+
+.side-rodape {
+	background: #222222;
+	width: 100%;
+	height: 256px;
+	margin-top: 50px;
+}
+
+.side-rodape > .informacoes {
+	width: 945px;
+	margin: auto;
+}
+
+.side-rodape > .informacoes > .informacao {
+	width: auto;
+	float: left;
+	margin-left: 64px;
+	margin-top: 39px;
+}
+
+.side-rodape > .informacoes > .informacao:first-of-type {
+	margin-left: 0;
+}
+
+.side-rodape > .informacoes > .informacao > .titulo {
+	color: #FFF;
+	font-family: "Segoe UI Semi Light";
+	font-size: 27px;
+}
+
+.side-rodape > .informacoes > .informacao > ul {
+	list-style: none;
+	margin-top: 19px;
+}
+
+.side-rodape > .informacoes > .informacao > ul > li.item {
+	color: rgba(255,255,255,0.80);
+	font-family: "Segoe UI Light";
+	font-size: 15px;
+	padding: 5px 5px;
+}
+
+.side-rodape > .informacoes > .informacao > ul > li.item:hover {
+	text-decoration: underline;
+}
+
+.side-rodape > .informacoes > .informacao > .fornecedores-principais {
+	background: url(../img/fornecedores-principais.png);
+	height: 132px;
+	width: 226px;
+	margin-top: 19px;
+}
+
+
+.side-rodape > .informacoes > .informacao > .formas-pagamento {
+	background: url(../img/formas-pagamento.png);
+	height: 62px;
+	width: 206px;
+	margin-top: 19px;
+}
+
+/* Copyright */
+
+.side-creditos {
+	background: #151515;
+	height: 42px;
+	width: 100%;
+	color: #FFF;
+	font-family: "Segoe UI Light";
+	font-size: 13px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 16px;
+}
